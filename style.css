@@ -1,0 +1,222 @@
+*{ 
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif; 
+    cursor: pointer; 
+}
+#Main{
+    height: 86vh;
+    width: 100%;
+    overflow: scroll;
+}
+#Main::-webkit-scrollbar{
+    display: none;
+}
+#navigation{ 
+    height: 8vh; 
+    width: 100%; 
+    background-color: rgb(19,25,33); 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+} 
+#navigation>input{ 
+    height: 35px; 
+    width: 500px; 
+    outline: none; 
+    padding-left: 10px; 
+    font-size: 18px; 
+    /* border-radius: 5px; */ 
+} 
+#navigation>select{ 
+    height: 30px; 
+    width: 100px; 
+    outline: none; 
+    text-align: center; 
+} 
+#navigation>a{ 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 900; 
+} 
+ 
+#home{ 
+    height: 90vh; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+} 
+#home>section{ 
+    height: 500px; 
+    width: 80%; 
+    /* border: 2px solid black; */ 
+    box-shadow: 0px 0px 2px grey; 
+    display: flex; 
+    flex-wrap: wrap; 
+ 
+} 
+#home>section>div{ 
+    height: 50%; 
+    width: 50%; 
+    /* border: 1px solid red; */ 
+    box-shadow: 0px 0px 1px grey; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+} 
+ 
+#footer{ 
+    height: 6vh; 
+    width: 100%; 
+    background-color: rgb(19,25,33); 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+/* ----------------------------------------------- THIS IS FOR LIST --------------------------------- */ 
+#list{ 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+#list>#item{ 
+    height: 250px; 
+    width: 80%; 
+    /* border: 2px solid black; */ 
+    display: flex; 
+    box-shadow: 0px 0px 1px grey; 
+    margin: 5px 0px; 
+} 
+#list>#item>section{ 
+    height: 100%; 
+    width: 40%; 
+    /* border: 0.5px solid grey; */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position:center; 
+    /* background-color: rgb(247,247,247); */ 
+} 
+#list>#item>section>img{ 
+    height: 80%; 
+    /* width: 100%; */ 
+} 
+ 
+#list>#item>article{ 
+    height: 100%; 
+    width: 60%; 
+    /* border: 1px solid red; */ 
+    padding: 20px; 
+} 
+#list>#item>article>span{ 
+    background-color: green; 
+    display: block; 
+    height: 20px; 
+    width: 50px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+} 
+/* ------------------------------------- This CSS for Single Product --------------------------------------- */ 
+#details{ 
+    height: 500px; 
+    width: 80%; 
+    /* border: 2px solid black; */ 
+    box-shadow: 0px 0px 2px grey; 
+    margin: auto; 
+    display: flex; 
+ 
+} 
+#details>section{ 
+    height: 100%; 
+    width: 40%; 
+    /* border: 1px solid green; */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position:center; 
+} 
+ 
+#details>article{ 
+    height: 100%; 
+    width: 60%; 
+    box-shadow: 0px 0px 1px grey; 
+    padding: 20px 20px 120px 20px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    /* align-items: flex-start; */ 
+} 
+#details>article>span{ 
+    background-color: green; 
+    display: block; 
+    height: 20px; 
+    width: 50px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+} 
+#details>article>p{ 
+    color: grey; 
+    text-transform:capitalize; 
+} 
+/* -------------------------------------------- THIS IS FOR GRID -------------------------------------------- */ 
+ 
+ 
+#grid{ 
+    width: 100%; 
+    /* background-color: grey; */ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px; 
+    padding-top: 20px; 
+} 
+#grid>#item{ 
+    height: 250px; 
+    width: 400px; 
+    box-shadow: 0px 0px 2px grey; 
+    display: flex;
+}
+#grid>#item>section{ 
+    height: 100%; 
+    width: 40%; 
+    /* border: 1px solid black; */ 
+    box-shadow: 0px 0px 1px grey; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position:center; 
+} 
+#grid>#item>article{ 
+    height: 100%; 
+    width: 60%; 
+    padding: 20px; 
+    /* border: 1px solid yellow; */ 
+}
+#grid>#item>article>span{ 
+    background-color: green; 
+    display: block; 
+    height: 20px; 
+    width: 50px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+} 
